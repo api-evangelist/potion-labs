@@ -1,8 +1,28 @@
 aid: potion-labs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/potion-labs.png
 name: Potion Labs
-description: 'Potion Labs is a company surfaced as a portfolio company of polychain and added to the API
-  Evangelist network as a stub for enrichment. Sector: defi. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Potion Labs (which rebranded its engineering org to Ntropika Labs) is a
+  decentralized finance team behind Potion Finance / Potion Protocol, an on-chain risk-management
+  and options platform on Ethereum. Potion is a "perfectly priced put AMM" — a decentralized
+  put-option / DeFi insurance marketplace where liquidity providers earn yield by selling
+  downside protection through a proprietary bonding curve based on the Kelly Criterion, while
+  buyers get automated routing to the best price across independent liquidity providers. The
+  protocol is delivered as Solidity smart contracts with TypeScript/Vue frontends rather than a
+  hosted REST API. Backed by Polychain Capital. This profile was surfaced from Polychain''s
+  portfolio and enriched from the team''s public GitHub org and website; the project appears
+  largely dormant (contracts deployed to the deprecated Ropsten testnet, and potion.fi now serves
+  a DeFi blog).'
 url: https://raw.githubusercontent.com/api-evangelist/potion-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +32,34 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Defi
+- Options
+- Smart Contracts
+- Ethereum
+- Web3
+- Risk Management
+- Insurance
+- Blockchain
 apis: []
+common:
+- type: DomainSecurity
+  url: security/potion-labs-domain-security.yml
+- type: Website
+  url: https://potion.fi/
+- type: GitHubOrganization
+  url: https://github.com/Ntropika-Labs
+- type: Blog
+  url: https://potion.fi/category/blogging/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
